@@ -17,6 +17,10 @@ config.py  contains a config
 The script was created to speed up reversing of unkown binaries by helping to name functions. Main purpose was for stripped binaries in embedded systems.
 
 
+Usage:
+Edit "arch" in config.py for correct arch. Invoke as IDA Script. Get a coffee.
+
+
 
 
 
