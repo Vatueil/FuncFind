@@ -1,0 +1,20 @@
+digraph memcpy { 
+	{
+	 0 [shape=box label=""]
+	 1 [shape=box label=""]
+	 2 [shape=box label="LOAD,REGISTER,MEM_ACCESS\nSUBS,REGISTER,REGISTER,NUMBER\nSTORE,REGISTER,MEM_ACCESS"]
+	 3 [shape=box label=""]
+	 4 [shape=box label="LOAD,REGISTER,MEM_ACCESS\nSUBS,REGISTER,REGISTER\nSTORE,REGISTER,MEM_ACCESS\nLOAD,REGISTER,MEM_ACCESS\nSTORE,REGISTER,MEM_ACCESS"]
+	 5 [shape=box label=""]
+
+	}
+0 -> 1
+0 -> 5
+1 -> 2
+1 -> 3
+2 -> 3
+2 -> 5
+3 -> 4
+4 -> 5
+4 -> 4
+}

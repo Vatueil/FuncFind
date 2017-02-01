@@ -1,0 +1,47 @@
+digraph strcpy_template { 
+	{
+	 0 [shape=box label=""]
+	 1 [shape=box label="LOAD,REGISTER,MEM_ACCESS\nCMP,REGISTER,NUMBER\nSTORE,MEM_ACCESS,REGISTER"] 
+	 2 [shape=box label=""]
+
+	}
+0 -> 1
+1 -> 2
+1 -> 1
+}
+
+
+
+
+
+
+
+
+#TODO get a better thingy for registers
+
+
+
+
+MEM_ACCSESS = *\[.+\] | @ptr
+NUMBER = [0-9]
+REGISTER = EAX | EBX | ECX | R15    [0-9a-zA-z]
+ADDRESS = 0x[0-9] | [0-9A-F]h
+
+
+how to do the labels for multiple regex??????
+
+mov,ecx,.*\[(.+)\] # write to mem
+
+add  $some_register , $number	# probably counter
+
+"mov,ecx,.*\[(.+)\],"
+
+"2:add,REGISTER_B, [0-9]"
+
+we need to replace the register with a wildcard -> multi architecture
+
+
+edx 
+rcx
+r15
+
