@@ -4,9 +4,9 @@ This IDA script is used for finding Functions in existing binaries.
 
 Relies on NetworkX for calculating subgraphisomorphism.
 
-This script is a prototyp and was written as part of my Bachelor Thesis 2015.
+This script is a prototype and was written as part of my Bachelor Thesis 2015.
 
-The script exports the control flow graphs  of all functions from IDA and uses subgraphisomorphism to match with templates to find similar functions. It also uses additional information from /helper for more precise matching.
+The script exports the control flow graphs of all functions from IDA and uses subgraphisomorphism to match with templates to find similar functions. It also uses additional information from /helper for more precise matching.
 
 /helper contains descriptions for some architectures.
 
